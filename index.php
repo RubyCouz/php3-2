@@ -1,8 +1,7 @@
 <?php
 //défintion des variables
 $number = 0;
-$number1 = 26;
-
+$number1 = rand(0, 100);
  ?>
  <!DOCTYPE html>
  <html lang="fr" dir="ltr">
@@ -13,11 +12,15 @@ $number1 = 26;
    <body>
      <p>
 <?php
-while ($number <= 20)
+while ($number < 20)
 {
-  echo $number * $number1;
-  $number++ . ' ,';
-
+  echo $number * $number1 . ' ';
+  $number++;
+}
+/*
+for($number = 0, $number < 20, $number++0)
+{
+echo $number * $number1 . ' '
 }
  ?>
      </p>
